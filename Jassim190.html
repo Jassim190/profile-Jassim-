@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jassim Al-Sunaidi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 30px;
+      color: #002b36;
+    }
+    /* العنصر الحاوي للدائرة الخارجية للصورة */
+    .profile-image-wrapper {
+      width: 160px; /* حجم أكبر قليلاً من الصورة */
+      height: 160px; /* حجم أكبر قليلاً من الصورة */
+      border-radius: 50%; /* لجعل الحاوية دائرية */
+      background-color: white; /* لون خلفية الحاوية لإنشاء الدائرة الخارجية */
+      display: flex; /* لجعل الصورة تتمركز داخلها */
+      justify-content: center; /* لتوسيط الصورة أفقياً */
+      align-items: center; /* لتوسيط الصورة عمودياً */
+      /* هامش سالب لرفع الصورة قليلاً فوق البطاقة */
+      margin: -130px auto 20px auto; /* تم جعل الهامش العلوي أكثر سلبية لرفع الصورة أكثر */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* ظل أقوى قليلاً للصورة المدمجة */
+      position: relative; /* لضمان ظهورها فوق البطاقة قليلاً */
+      z-index: 10; /* لضمان أنها في المقدمة */
+    }
+    /* الصورة نفسها (الدائرة الداخلية) */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f0f0f0;
+    }
+    /* تنسيقات حزمة النص (البطاقة) */
+    .text-card {
+      background-color: white;
+      border-radius: 15px;
+      /* تقليل المسافة الداخلية العلوية لتقليل ارتفاع المربع من الأعلى */
+      padding: 150px 15px 20px 15px; /* أعلى، يمين، أسفل، يسار - تم تقليل padding-top */
+      margin: 0 auto 20px auto; /* هامش علوي لإنشاء مساحة للبطاقة نفسها مع الصورة البارزة - تم الإبقاء عليه 0 لرفع البطاقة لأقصى حد ممكن */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      max-width: 380px;
+      color: #002b36;
+      position: relative; /* لتحديد سياق positioning */
+    }
+    .text-card h2 { /* تنسيقات النص داخل البطاقة */
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      margin: 0; /* إزالة الهوامش الافتراضية لـ h2 */
+      line-height: 1.4;
+    }
+    .icons {
+      margin: 15px 0;
+    }
+    .icons img {
+      width: 40px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      max-width: 350px;
+      background-color: white;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 10px auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 16px;
+      text-decoration: none;
+      color: #002b36;
+    }
+    .link-button img {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      padding: 2px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- تم نقل الصورة الشخصية إلى داخل بطاقة النص -->
+  <div class="text-card">
+    <div class="profile-image-wrapper">
+      <img class="profile-img" src="https://i.postimg.cc/Gt2HLtxB/Snapchat-1256457053.jpg" alt="صورتك">
+    </div>
+    <h2> مرحباً تواصل معي عبر الحسابات التالية.. شكراً لزيارتك الرائعه والمميزه ❤️</h2>
+  </div>
+
+  <a class="link-button" href="mailto:wrt77008@gmail.com">
+    <span>Gmail</span>
+    <img src="https://i.ibb.co/67pgbT81/wired-outline-1141-email-hover-rotation.gif" alt="wired-outline-1141-email-hover-rotation" border="0">
+  </a>
+
+  <a class="link-button" href="https://wa.me/+967771809125">
+    <span>WhatsApp</span>
+    <img src="https://i.ibb.co/ZzD7sBjf/wired-outline-2627-logo-circle-whatsapp-hover-pinch.gif" alt="wired-outline-2627-logo-circle-whatsapp-hover-pinch" border="0">
+  </a>
+
+  <a class="link-button" href="https://www.instagram.com/dh_.g5?igsh=MWVheDUzaXhkMGI2eg==">
+    <span>Instagram </span>
+    <img src="https://i.ibb.co/x8dWP6rZ/wired-outline-2626-logo-circle-instagram-hover-rotate.gif" alt="wired-outline-2626-logo-circle-instagram-hover-rotate" border="0">
+  </a>
+
+  <a class="link-button" href="https://www.facebook.com/share/15uSffwraV/">
+    <span>Facebook</span>
+    <img src="https://i.ibb.co/WNtkCZMd/wired-outline-2624-logo-circle-facebook-hover-cycle.gif" alt="wired-outline-2624-logo-circle-facebook-hover-cycle" border="0">
+  </a>
+
+  <a class="link-button" href="https://www.snapchat.com/add/dh_jassim190?share_id=37UU3H1mQLU&locale=ar-SA-u-nu-arab">
+    <span>Snapshot</span>
+    <img src="https://i.ibb.co/r23KvyxY/wired-outline-2635-logo-circle-snapchat-loop-cycle.gif" alt="wired-outline-2635-logo-circle-snapchat-loop-cycle" border="0">
+  </a>
+
+</body>
+</html>
